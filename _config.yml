@@ -25,8 +25,8 @@ exclude:
   - Guardfile
   - Gemfile
   - Gemfile.lock
-gems:
-  - octopress-autoprefixer
+#gems:
+#  - octopress-autoprefixer
 collections:
   faq:
     permalink: /faq/:path/
