@@ -1,0 +1,49 @@
+# Site settings
+url: https://maxgit.maxgoldhouse.com/
+baseurl: /
+permalink: /:categories/:title/
+tags_dir: tags
+ubuntu_version: trusty
+
+# Defaults for posts
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: posts
+    values:
+      layout: page
+      weight: 50
+
+# Jekyll
+exclude:
+  - _s3.json
+  - bin
+  - external
+  - Readme.md
+  - License.md
+  - Guardfile
+  - Gemfile
+  - Gemfile.lock
+gems:
+  - octopress-autoprefixer
+collections:
+  faq:
+    permalink: /faq/:path/
+    output: true
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Build settings
+markdown: kramdown
+
+# Kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    line_numbers: false
